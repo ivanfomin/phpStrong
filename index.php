@@ -24,11 +24,11 @@ $file = new \Model\FileSave();
 //классы DbSave, FileSave extends EventManager
 $db->subscribe('successWriting', function () {
 
-    include(__DIR__ . '/View/showDb.php');
+    include(__DIR__ . '/View/showDb.html');
 });
 
 $file->subscribe('successWriting', function () {
-    include(__DIR__ . '/View/showFile.php');
+    include(__DIR__ . '/View/showFile.html');
 
 });
 
